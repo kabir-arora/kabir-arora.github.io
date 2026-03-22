@@ -3,16 +3,16 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  border: 2px solid red;
 }
 
 .article {
   margin-top: 50px;
   margin-right: 35%;
   width: 40%;
-  /* border-color: red;
-  border-style: solid;
-  border-width: 2px; */
+  border: 2px solid red;
 }
+
 
 .text-header1 {
   font-family: "EB Garamond", serif;
@@ -25,3 +25,18 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.margin__column {
+  position: absolute;
+  border: 2px solid red;
+  width: 40%;
+  margin-left: 50%;
+  margin-top: 50px;
+}
+
+.profile__pic {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+

@@ -1,74 +1,120 @@
 <!DOCTYPE html>
 
+<!-- TO DO: 
+ 1. Keep image in the back constant while scrolling
+ 2. Make the landing page like an inbox, projects have to be seen
+ 3. Add a project, with images, references, and margin notes
+ 4. Fix formatting issues when viewing on phone
+ 5. Add a commenting feature 
+ -->
+
+
 <html>
   
   <head>
+    <meta charset="utf-8"/>
     <title>Kabir Arora</title>
-    <link rel="stylesheet" href="styles/general.css">
+    <!-- <link rel="stylesheet" href="styles/general.css"> -->
     <link rel="stylesheet" href="styles/banner.css">
-    <link rel="stylesheet" href="styles/text.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="styles/text.css"> -->
+    <link rel="stylesheet" href="styles/tufte.css">
 
   </head>
 
   <body>
-    <div class="banner-container">
-      <div class="image-container">
-        <img class="banner-img" src="images/cows_forest_painting.jpg">
-      </div>
-      <div class="banner-title">
-        <h1>Kabir Arora</h1>
-      </div>
-    </div>
-    <div class="banner-accent"></div>
-    <div class="banner-menu">
-      <button class="menu-button">Main Menu</button>
-      <button class="menu-button">Projects</button>
-    </div>
-    
-    
 
-    
-    <div class="article-container">
-      <article class="article">
-        <h1 class="text-header1">Main</h1>
+      <div class="banner">
+
+        <div class="banner__background"></div>
+
+        <div class="top__section">
+
+          <img class="banner__image" src="images/cows_forest_painting.jpg">
+
+          <div class="banner__title">
+            <h1 id="banner__title">Kabir Arora</h1>
+          </div>
+
+        </div>
+
+        <div class="banner__accent"></div>
+        <div class="banner__menu">
+          <div class="home__button">
+            <a href="index.html" class="banner__button">Home</a>
+          </div>
+          <div class="projects__button">
+            <a href="projects.html" class="banner__button">Projects</a>
+          </div>
+        </div>
+
+      </div>
+
+      <article>
+
         <section>
-          <p class="body-text">
+          <p class="subtitle">
+            about me
+            <label for="mn-figure-1" class="margin-toggle">&#8853;</label>
+            <input type="checkbox" id="mn-figure-1" class="margin-toggle"/>
+            <span class="marginnote"><img src="images/profile_pic.jpeg" alt="Image of a Rhinoceros"/>
+              This is me. <em>And this is text in italics.</em> 
+            </span> 
+          </p>
+
+          <p>
             Living is a process of prediction, of appropriately weighting past information 
             to inform meaningful future behavior. This predictive behavior can be analyzed 
             as a sequence of discrete events in time, in terms of co-occurrences or dependencies 
             between individual elements. Previous work has demonstrated a sweeping presence of long-range 
             dependencies (LRDs) in a variety of biological behaviors—a finding indicative of underlying 
             hierarchical mechanisms. However, more profound is the idea that this structure is a 
-            natural consequence of a sequence produced by a predictive system. <br>
-            
-            <br>To target this potential, 
+            natural consequence of a sequence produced by a predictive system.
+          </p>
+
+          <p>
+            To target this potential, 
             I plan to investigate the utility of predictive structure in the communicative behavior of 
             European starlings. Communication between organisms relies on co-evolved perceptual and 
             generative mechanisms, and thus innate structure in generative processes are likely to be 
-            mirrored in perceptual processes. <br> 
-            
-            <br>I will curate a song dataset from two starlings, and train a structured state space sequence 
+            mirrored in perceptual processes.
+          </p>
+
+          <p>
+            <label for="mn-para-2" class="margin-toggle">&#8853;</label>
+            <input type="checkbox" id="mn-para-2" class="margin-toggle"/>
+            <span class="marginnote">
+              How cool is it that I can do margin notes
+            </span>
+
+            I will curate a song dataset from two starlings, and train a structured state space sequence 
             model (S4) individually on each singer. I will train starlings on a vocal recognition task 
             with the natural song, and then introduce song generated by S4. Usefully, S4 explicitly models
             LRDs in its internal state, which I can isolate to perform a 
             controlled perturbation to the artificial song’s long-range structure content, biasing it 
             towards short-range structure. Discrimination performance with the long-range degraded song 
-            will be used to determine perceptual salience of LRDs in vocal recognition. <br>
-
-            <br> Ultimately this project aims to utilize modern sequence models to test for any natural, 
-            perceptual mechanism of LRDs in vocal recognition. <br><br><br>
+            will be used to determine perceptual salience of LRDs in vocal recognition. 
           </p>
-        </section>
-      </article>
-    </div>
+          
+          <p>
+            Ultimately this project aims to utilize modern sequence models to test for any natural, 
+            perceptual mechanism of LRDs in vocal recognition.
+          </p>
 
+
+          <figure>
+            <label for="mn-exports-imports" class="margin-toggle">&#8853;</label>
+            <input type="checkbox" id="mn-exports-imports" class="margin-toggle"/>
+            <span class="marginnote">
+              From Rijksmuseum, <em>River view</em>, 1631
+            </span>
+            <img src="images/dramatic_clouds.jpg" alt="Exports and Imports to and from Denmark & Norway from 1700 to 1780" />
+          </figure>
+
+
+        </section>
+
+      </article>
 
 
   </body>
