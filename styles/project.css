@@ -1,0 +1,81 @@
+.proj__container {
+  position: relative;
+  width: 75%;
+  margin-left: 12.5%;
+  padding: 5rem 0;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0px;
+}
+
+.proj__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 0 3rem 0 3rem;
+
+  color: #111;
+  font-size: 32px;
+  text-decoration: none;
+
+  /* line-height: 1; */
+  /* white-space: nowrap; */
+
+  transition: background-color 0.15s;
+  box-shadow: 
+    /* inset 0 -2em 2em #f2dec3ff;  */
+    /* 0.2em 0.2em 0.5em 0.1em black; */
+    inset 0 2px black;
+}
+
+/*box-shadow: x_offset y_offset blur_radius spread_radius*/
+
+.proj__item:hover {
+  background-color: rgba(242, 222, 195, 1);
+}
+
+.blank__item .proj__item:hover{
+  background-color: transparent;
+}
+
+
+.menu__bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+  background-color: rgb(126, 57, 50);
+  box-shadow: -2px 4px 18px black;
+  z-index: 1;
+}
+
+.title__button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  top: 10px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.title__button a:link,
+.title__button a:visited {
+  text-decoration: none;
+  font-size: 30px;
+}
+

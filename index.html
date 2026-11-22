@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
 <!-- TO DO: 
- 1. Keep image in the back constant while scrolling
- 2. Make the landing page like an inbox, projects have to be seen
- 3. Add a project, with images, references, and margin notes
- 4. Fix formatting issues when viewing on phone
- 5. Add a commenting feature 
+ - Make the landing page like an inbox, projects have to be seen
+ - Add a project, with images, references, and margin notes
+ - Add a commenting feature 
+ - fix projects banner image (crop maybe?), appears as full picture on mobile/smaller screens
  -->
 
 
@@ -17,6 +16,7 @@
     <link rel="stylesheet" href="styles/tufte.css">
     <link rel="stylesheet" href="styles/banner.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="styles/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff" as="font" type="font/woff" crossorigin>
   </head>
 
   <body>
@@ -39,7 +39,7 @@
         <div class="banner__menu">
           <div class="banner__buttons">
             <a href="index.html" class="banner__button">Home</a>
-            <a href="projects.html" class="banner__button">Projects</a>
+            <a href="projects_page.html" class="banner__button">Projects</a>
           </div>
         </div>
 
@@ -52,9 +52,7 @@
             about me
             <label for="mn-figure-1" class="margin-toggle">&#8853;</label>
             <input type="checkbox" id="mn-figure-1" class="margin-toggle"/>
-            <span class="marginnote"><img src="images/profile_pic.jpeg" alt="Image of a Rhinoceros"/>
-              This is me. <em>And this is text in italics.</em> 
-            </span> 
+            <span class="marginnote"><img src="images/profile_pic.jpeg" alt="Picture of me!"/></span> 
           </p>
 
           <p>
